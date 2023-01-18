@@ -7,7 +7,7 @@ void setup() {
 
 void loop() {
 	if(Serial.available()){
-    int variable_dato_ingresado_por_teclado;// Definiendo caroables necesarias
+  	  int variable_dato_ingresado_por_teclado;// Definiendo caroables necesarias
 	  variable_dato_ingresado_por_teclado = Serial.parseInt();  // Guardando valor en variable_dato_ingresado_por_teclado
     
 		digitalWrite(Ingresar_nombre_led_u_otro, LOW);// Apaga el led
@@ -16,7 +16,7 @@ void loop() {
 			digitalWrite(Ingresar_nombre_led_u_otro, HIGH);// Enciende el led
 		}
 		else{
-      /*Otra tarea*/
+     		/*Otra tarea*/
 		}
 
 	}
