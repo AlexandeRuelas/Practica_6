@@ -12,19 +12,21 @@ void setup() {
 
 void loop() {
 	if(Serial.available()){
-    int num;// Definiendo caroables necesarias
-	  num = Serial.parseInt();  // Guardando valor en variable_dato_ingresado_por_teclado
+		int num;// Definiendo caroables necesarias
+	 	num = Serial.parseInt();  // Guardando valor en variable_dato_ingresado_por_teclado
 		digitalWrite(L_6, LOW);// Apaga el led
 		digitalWrite(L_7, LOW);
-    digitalWrite(L_8, LOW);
+    		digitalWrite(L_8, LOW);
     
 		if(num == 0){
 			digitalWrite(L_6, HIGH);// Enciende el led
 		}
 		else if(num > 0){
-      digitalWrite(L_7, HIGH);
+      			digitalWrite(L_7, HIGH);
 		}
-    else{
-      digitalWrite(L_8, HIGH);
-    }
+    		else{
+      			digitalWrite(L_8, HIGH);
+    		}
 	}
+
+}
